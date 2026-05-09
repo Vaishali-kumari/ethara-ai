@@ -38,7 +38,7 @@ A full-stack Team Task Manager web application where users can create projects, 
 
 ### Deployment
 - Railway
-
+- Vercel
 ---
 
 ## Installation
