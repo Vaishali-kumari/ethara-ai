@@ -6,19 +6,22 @@ const projectSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    description: String,
+
+    description: {
+      type: String,
+    },
+
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    members: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.model(
+  "Project",
+  projectSchema
+);
