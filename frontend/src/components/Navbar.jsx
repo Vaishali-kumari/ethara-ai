@@ -15,7 +15,6 @@ export default function Navbar() {
         padding: "15px",
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
       }}
     >
       <div>
@@ -24,7 +23,6 @@ export default function Navbar() {
           style={{
             color: "white",
             marginRight: "15px",
-            textDecoration: "none",
           }}
         >
           Dashboard
@@ -35,7 +33,6 @@ export default function Navbar() {
           style={{
             color: "white",
             marginRight: "15px",
-            textDecoration: "none",
           }}
         >
           Projects
@@ -45,20 +42,13 @@ export default function Navbar() {
           to="/create-task"
           style={{
             color: "white",
-            textDecoration: "none",
           }}
         >
           Create Task
         </Link>
       </div>
 
-      <button
-        onClick={logout}
-        style={{
-          padding: "8px 15px",
-          cursor: "pointer",
-        }}
-      >
+      <button onClick={logout}>
         Logout
       </button>
     </div>
